@@ -11,12 +11,12 @@ class App extends Component {
         <header>
           <OnlinePresence />
         </header>
-        <body className={'App-container'}>
-          <section>
+        <section className={'App-container'}>
+          <div>
             <Intro />
             <Button />
-          </section>
-        </body>
+          </div>
+        </section>
       </main>
     );
   }
