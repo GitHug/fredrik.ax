@@ -1,0 +1,20 @@
+.MyButton {
+}
+
+.MyButton button {
+  background-color: rgba(255, 255, 255, 0.45);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.MyButton button:hover {
+  background-color: rgb(255, 255, 255);
+}

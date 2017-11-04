@@ -4,13 +4,12 @@ import twitter_logo from './external_logos/Twitter_Logo_WhiteOnImage.svg';
 import linkedin_logo from './external_logos/linkedin-logo.svg';
 import hackerrank_logo from './external_logos/HackerRank_logo.svg';
 import ImageLink from './ImageLink';
-import './AppHeader.css';
+import './OnlinePresence.css';
 
-class AppHeader extends Component {
+class OnlinePresence extends Component {
   render() {
     return (
-      <header className={'AppHeader-container'}>
-        <p className={'AppHeader-app-name'}>Fredrik.ax</p>
+      <div className={'AppHeader-container'}>
         <ImageLink
           url={'https://github.com/GitHug'}
           image={github_logo}
@@ -31,9 +30,9 @@ class AppHeader extends Component {
           image={hackerrank_logo}
           alt={'HackerRank'}
         />
-      </header>
+      </div>
     );
   }
 }
 
-export default AppHeader;
+export default OnlinePresence;

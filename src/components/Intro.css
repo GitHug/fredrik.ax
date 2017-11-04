@@ -1,0 +1,19 @@
+.Intro {
+  color: #ffffff;
+  padding: 20px;
+  font-family: 'Didact Gothic', sans-serif;
+  display: inline-block;
+}
+
+.Intro h1 {
+  font-size: 64px;
+  margin: 0;
+  padding: 0;
+}
+
+.Intro h2 {
+  font-size: 20px;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
