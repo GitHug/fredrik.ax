@@ -1,8 +1,8 @@
 html {
   background: linear-gradient(
       to left,
-      rgba(0, 0, 0, 0.45),
-      rgba(0, 0, 0, 0.45)
+      rgba(19, 20, 63, 0.65),
+      rgba(19, 20, 63, 0.65)
     ),
     url('images/background.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -11,28 +11,12 @@ html {
   background-size: cover;
 }
 
+body {
+  overflow: hidden;
+}
+
 .App {
   height: 100vh;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
 }
 
 .App-container {
@@ -40,19 +24,9 @@ html {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  padding-left: 5em;
 }
 
-.App-container section {
-  display: inline-block;
-}
-
-.main-container {
-  float: left;
-  position: relative;
-  left: 50%;
-}
-.fixer-container {
-  float: left;
-  position: relative;
-  left: -50%;
+.App-container button {
+  margin-top: 20px;
 }

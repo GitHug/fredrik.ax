@@ -5,7 +5,7 @@ class MyButton extends Component {
   render() {
     return (
       <div className={'MyButton'}>
-        <button>abc</button>
+        <button>{this.props.name}</button>
       </div>
     );
   }

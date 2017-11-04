@@ -14,7 +14,7 @@ class App extends Component {
         <section className={'App-container'}>
           <div>
             <Intro />
-            <Button />
+            <Button name={'ABOUT ME'} />
           </div>
         </section>
       </main>
