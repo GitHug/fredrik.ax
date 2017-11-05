@@ -4,7 +4,7 @@ class ImageLink extends Component {
   render() {
     return (
       <a href={this.props.url} target={'_blank'}>
-        abc
+        <img src={this.props.image} alt={this.props.alt} />
       </a>
     );
   }

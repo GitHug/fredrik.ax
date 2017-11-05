@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import GitHubLogo from './external_logos/GitHubLogo';
-import HackerRankLogo from './external_logos/HackerRankLogo';
-import TwitterLogo from './external_logos/TwitterLogo';
-import LinkedInLogo from './external_logos/LinkedInLogo';
+import GitHubLogo from './logos/GitHubLogo';
+import HackerRankLogo from './logos/HackerRankLogo';
+import TwitterLogo from './logos/TwitterLogo';
+import LinkedInLogo from './logos/LinkedInLogo';
 import './OnlinePresence.css';
 
 class OnlinePresence extends Component {
