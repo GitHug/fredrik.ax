@@ -11,7 +11,11 @@ class ButtonBar extends Component {
             <Button content={'ABOUT ME'} />
           </li>
           <li>
-            <Button buttonClass={'hvr-icon-spin'} />
+            <Button
+              content={
+                <i className={'fa fa-space-shuttle'} aria-hidden="true" />
+              }
+            />
           </li>
         </ul>
       </nav>
