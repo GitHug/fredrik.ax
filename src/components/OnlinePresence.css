@@ -13,11 +13,11 @@
   fill: white;
 }
 
-a svg:hover {
+.OnlinePresence-container a svg:hover {
   fill: #161614;
 }
 
-a svg {
+.OnlinePresence-container a svg {
   transition: 200ms;
   transition-timing-function: ease-in-out;
   -webkit-transition: 200ms;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import OnlinePresence from './components/OnlinePresence';
 import Intro from './components/Intro';
-import Button from './components/MyButton';
+import ButtonBar from './components/ButtonBar';
 
 class App extends Component {
   render() {
@@ -14,7 +14,7 @@ class App extends Component {
         <section className={'App-container'}>
           <div>
             <Intro />
-            <Button name={'ABOUT ME'} />
+            <ButtonBar />
           </div>
         </section>
       </main>
