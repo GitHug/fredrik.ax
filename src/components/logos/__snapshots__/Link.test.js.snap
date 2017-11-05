@@ -5,9 +5,6 @@ exports[`renders an anchor tag containing an url and an image 1`] = `
   href="url"
   target="_blank"
 >
-  <img
-    alt="alt"
-    src="image"
-  />
+  content
 </a>
 `;
