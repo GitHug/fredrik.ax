@@ -1,4 +1,4 @@
-.AppHeader-container {
+.OnlinePresence-container {
   height: 32px;
   padding: 20px;
   color: white;
@@ -6,8 +6,20 @@
   float: right;
 }
 
-.AppHeader-container img {
+.OnlinePresence-container a svg {
   width: 32px;
   height: 32px;
   padding-right: 5px;
+  fill: white;
+}
+
+a svg:hover {
+  fill: #161614;
+}
+
+a svg {
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
 }
