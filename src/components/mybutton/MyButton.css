@@ -2,7 +2,7 @@
   vertical-align: top;
 }
 
-.MyButton button {
+.MyButton a {
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid #fff;
   color: white;
@@ -16,18 +16,18 @@
   border-radius: 0;
 }
 
-.MyButton button:hover {
+.MyButton a:hover {
   background-color: rgb(255, 255, 255);
   color: black;
 }
 
-.MyButton button {
+.MyButton a {
   transition: 200ms;
   transition-timing-function: ease-in-out;
   -webkit-transition: 200ms;
   -webkit-transition-timing-function: ease-in-out;
 }
 
-.MyButton button:focus {
+.MyButton a:focus {
   outline: 0;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from './MyButton';
+import Button from '../mybutton/MyButton';
 import './ButtonBar.css';
 
 class ButtonBar extends Component {
@@ -8,10 +8,11 @@ class ButtonBar extends Component {
       <nav className={'ButtonBar'}>
         <ul>
           <li>
-            <Button content={'ABOUT ME'} />
+            <Button page={'/about-me'} content={'ABOUT ME'} />
           </li>
           <li>
             <Button
+              page={'/secret'}
               content={
                 <i className={'fa fa-space-shuttle'} aria-hidden="true" />
               }
