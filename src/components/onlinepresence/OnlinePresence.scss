@@ -1,0 +1,25 @@
+.OnlinePresence-container {
+  height: 32px;
+  padding: 20px;
+  color: white;
+  width: auto;
+  float: right;
+}
+
+.OnlinePresence-container a svg {
+  width: 32px;
+  height: 32px;
+  padding-right: 5px;
+  fill: white;
+}
+
+.OnlinePresence-container a svg:hover {
+  fill: #161614;
+}
+
+.OnlinePresence-container a svg {
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
