@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-import Intro from './intro/Intro';
 import { NavLink } from 'react-router-dom';
 
 class AboutMe extends Component {
   render() {
     return (
       <div>
-        <NavLink to={'/'}>
-          <Intro />
-        </NavLink>
         <h2>HELLO</h2>
         <p>
           Cras facilisis urna ornare ex volutpat, et convallis erat elementum.

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Route, HashRouter } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 import OnlinePresence from './components/onlinepresence/OnlinePresence';
 import AboutMe from './components/AboutMe';
 import Home from './components/Home';
@@ -15,9 +15,15 @@ class App extends Component {
             <OnlinePresence />
           </header>
           <section className={'App-container'}>
-            <Route exact path={'/'} component={Home} />
-            <Route path={'/about-me'} component={AboutMe} />
-            <Route path={'/secret'} component={Secret} />
+            <div className={'App-grid'}>
+              <div className={'column-left'}>
+                <Home />
+              </div>
+              <div className={'column-right'}>
+                <Route path={'/about-me'} component={AboutMe} />
+                <Route path={'/secret'} component={Secret} />
+              </div>
+            </div>
           </section>
         </main>
       </HashRouter>

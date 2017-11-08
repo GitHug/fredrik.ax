@@ -21,7 +21,7 @@ body {
 
 .App-container {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
   height: 100%;
   padding-left: 5em;
@@ -29,4 +29,17 @@ body {
 
 .App-container button {
   margin-top: 20px;
+}
+
+.App-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.App-grid .column-left {
+  grid-column-start: 1;
+}
+
+.App-container .column-right {
+  grid-column-start: 2;
 }
