@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import { HashRouter, Route } from 'react-router-dom';
-import OnlinePresence from './components/onlinepresence/OnlinePresence';
 import AboutMe from './components/AboutMe';
 import Home from './components/Home';
 import Secret from './components/Secret';
+import MyNavbar from './components/MyNavbar';
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
       <HashRouter>
         <main className={'App container-fluid'}>
           <header>
-            <OnlinePresence />
+            <MyNavbar />
           </header>
           <section className={'App-container container'}>
             <div className={'row'}>

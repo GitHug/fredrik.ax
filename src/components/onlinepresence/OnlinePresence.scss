@@ -1,8 +1,5 @@
 .OnlinePresence-container {
-  padding-top: 1em;
   color: white;
-  display:flex;
-  justify-content: flex-end;
 }
 
 .OnlinePresence-container a svg {
@@ -16,7 +13,7 @@
   fill: #161614;
 }
 
-.OnlinePresence-container a svg {
+.OnlinePresence-container   a svg {
   transition: 200ms;
   transition-timing-function: ease-in-out;
   -webkit-transition: 200ms;
