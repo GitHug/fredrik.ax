@@ -1,3 +1,7 @@
+.ButtonBar {
+  white-space: nowrap;
+}
+
 .ButtonBar ul {
   list-style-type: none;
   margin: 0;
@@ -10,5 +14,5 @@
 }
 
 .ButtonBar li {
-  padding-right: 20px;
+  padding-right: 1em;
 }

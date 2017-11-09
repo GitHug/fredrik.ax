@@ -9,37 +9,14 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-body {
-  overflow: hidden;
-}
-
-.App {
   height: 100vh;
+  width: 100%;
 }
 
 .App-container {
   display: flex;
-  flex-flow: column wrap;
   justify-content: center;
-  height: 100%;
-  padding-left: 5em;
+  align-content: center;
 }
 
-.App-container button {
-  margin-top: 20px;
-}
 
-.App-grid {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-.App-grid .column-left {
-  grid-column-start: 1;
-}
-
-.App-container .column-right {
-  grid-column-start: 2;
-}

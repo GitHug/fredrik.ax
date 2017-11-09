@@ -1,15 +1,14 @@
 .OnlinePresence-container {
-  height: 32px;
-  padding: 20px;
+  padding-top: 1em;
   color: white;
-  width: auto;
-  float: right;
+  display:flex;
+  justify-content: flex-end;
 }
 
 .OnlinePresence-container a svg {
-  width: 32px;
-  height: 32px;
-  padding-right: 5px;
+  width: 2em;
+  height: 2em;
+  padding-right: 0.3em;
   fill: white;
 }
 

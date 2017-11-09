@@ -5,7 +5,7 @@ import './ButtonBar.css';
 class ButtonBar extends Component {
   render() {
     return (
-      <nav className={'ButtonBar'}>
+      <nav className={'ButtonBar btn-group'}>
         <ul>
           <li>
             <Button page={'/about-me'} content={'ABOUT ME'} />

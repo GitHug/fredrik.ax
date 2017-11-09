@@ -10,16 +10,16 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-        <main className="App">
+        <main className={'App container-fluid'}>
           <header>
             <OnlinePresence />
           </header>
-          <section className={'App-container'}>
-            <div className={'App-grid'}>
-              <div className={'column-left'}>
+          <section className={'App-container container'}>
+            <div className={'row'}>
+              <div className={'col'}>
                 <Home />
               </div>
-              <div className={'column-right'}>
+              <div className={'col'}>
                 <Route path={'/about-me'} component={AboutMe} />
                 <Route path={'/secret'} component={Secret} />
               </div>

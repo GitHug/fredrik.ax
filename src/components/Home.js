@@ -7,7 +7,7 @@ class Home extends Component {
     return (
       <div className={'Home-container'}>
         <Intro />
-        <ButtonBar />
+        <ButtonBar className={'row'} />
       </div>
     );
   }
