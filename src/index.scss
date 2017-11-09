@@ -1,3 +1,9 @@
+//My custom bootstrap configuration
+@import 'custom_bootstrap';
+
+//Bootstrap library
+@import '../node_modules/bootstrap/scss/bootstrap';
+
 body {
   margin: 0;
   padding: 0;
