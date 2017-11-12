@@ -8,6 +8,12 @@ class ButtonBar extends Component {
       <nav className={'ButtonBar btn-group'}>
         <ul>
           <li>
+            <Button
+              page={'/'}
+              content={<i class="fa fa-home" aria-hidden="true" />}
+            />
+          </li>
+          <li>
             <Button page={'/about-me'} content={'ABOUT ME'} />
           </li>
           <li>

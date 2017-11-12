@@ -5,15 +5,3 @@ nav.navbar a.navbar-brand h1 {
 nav.navbar a.navbar-brand h1 small {
   font-size: x-small;
 }
-
-nav.navbar a.navbar-brand h1:hover {
-  color: #161614;
-  text-shadow: 1px 1px 2px white, 0 0 25px blue, 0 0 5px darkblue;
-}
-
-nav.navbar a.navbar-brand h1 {
-  transition: 200ms;
-  transition-timing-function: ease-in-out;
-  -webkit-transition: 200ms;
-  -webkit-transition-timing-function: ease-in-out;
-}

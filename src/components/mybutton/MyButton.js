@@ -6,7 +6,9 @@ class MyButton extends Component {
   render() {
     return (
       <div className={'MyButton active'}>
-        <NavLink to={this.props.page}>{this.props.content}</NavLink>
+        <NavLink exact to={this.props.page}>
+          {this.props.content}
+        </NavLink>
       </div>
     );
   }
