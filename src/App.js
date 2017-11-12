@@ -14,7 +14,7 @@ class App extends Component {
           <header>
             <MyNavbar />
           </header>
-          <section className={'App-container container'}>
+          <section className={'container'}>
             <div className={'row'}>
               <div className={'col'}>
                 <Route exact path={'/'} component={Home} />
