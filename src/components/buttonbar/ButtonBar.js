@@ -10,7 +10,7 @@ class ButtonBar extends Component {
           <li>
             <Button
               page={'/'}
-              content={<i class="fa fa-home" aria-hidden="true" />}
+              content={<i className={'fa fa-home'} aria-hidden="true" />}
             />
           </li>
           <li>
