@@ -5,26 +5,22 @@ import './ButtonBar.css';
 class ButtonBar extends Component {
   render() {
     return (
-      <nav className={'ButtonBar btn-group'}>
-        <ul>
-          <li>
+      <nav class="navbar navbar-light">
+        <form class="form-inline">
+          <form class="form-inline">
             <Button
               page={'/'}
-              content={<i className={'fa fa-home'} aria-hidden="true" />}
+              content={<i class="fa fa-home" aria-hidden="true" />}
             />
-          </li>
-          <li>
-            <Button page={'/about-me'} content={'ABOUT ME'} />
-          </li>
-          <li>
+            <Button page={'/about-me'} content={'About me'} />
             <Button
-              page={'/secret'}
+              page={'/login'}
               content={
                 <i className={'fa fa-space-shuttle'} aria-hidden="true" />
               }
             />
-          </li>
-        </ul>
+          </form>
+        </form>
       </nav>
     );
   }

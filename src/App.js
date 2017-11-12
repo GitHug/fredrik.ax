@@ -19,7 +19,7 @@ class App extends Component {
               <div className={'col'}>
                 <Route exact path={'/'} component={Home} />
                 <Route path={'/about-me'} component={AboutMe} />
-                <Route path={'/secret'} component={Secret} />
+                <Route path={'/login'} component={Secret} />
               </div>
             </div>
           </section>

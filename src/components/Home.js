@@ -8,7 +8,7 @@ class Home extends Component {
     return (
       <div className={'row'}>
         <div className={'col-sm-12'}>
-          <div className={'card'}>
+          <div className={'card page-card'}>
             <div className={'card-header'}>
               <ButtonBar />
             </div>
