@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import OnlinePresence from './onlinepresence/OnlinePresence';
+import './MyNavbar.css';
 
 class Navbar extends Component {
   render() {

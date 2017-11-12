@@ -5,9 +5,13 @@ import ButtonBar from './buttonbar/ButtonBar';
 class Home extends Component {
   render() {
     return (
-      <div className={'Home-container'}>
-        <Intro />
-        <ButtonBar className={'row'} />
+      <div>
+        <div className={'row'}>
+          <Intro />
+        </div>
+        <div className={'row'}>
+          <ButtonBar />
+        </div>
       </div>
     );
   }

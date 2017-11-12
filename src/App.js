@@ -15,11 +15,9 @@ class App extends Component {
             <MyNavbar />
           </header>
           <section className={'App-container container'}>
-            <div className={'row'}>
+            <div className={'row w-100'}>
               <div className={'col'}>
-                <Home />
-              </div>
-              <div className={'col'}>
+                <Route exact path={'/'} component={Home} />
                 <Route path={'/about-me'} component={AboutMe} />
                 <Route path={'/secret'} component={Secret} />
               </div>
