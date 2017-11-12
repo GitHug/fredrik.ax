@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ButtonBar from './buttonbar/ButtonBar';
-import './Secret.css';
+import './Login.css';
 
 class Secret extends Component {
   render() {

@@ -3,7 +3,7 @@ import './App.css';
 import { HashRouter, Route } from 'react-router-dom';
 import AboutMe from './components/AboutMe';
 import Home from './components/Home';
-import Secret from './components/Secret';
+import Secret from './components/Login';
 import MyNavbar from './components/MyNavbar';
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
             <MyNavbar />
           </header>
           <section className={'App-container container'}>
-            <div className={'row w-100'}>
+            <div className={'row'}>
               <div className={'col'}>
                 <Route exact path={'/'} component={Home} />
                 <Route path={'/about-me'} component={AboutMe} />
