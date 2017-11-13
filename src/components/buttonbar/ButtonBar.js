@@ -7,15 +7,23 @@ class ButtonBar extends Component {
     return (
       <nav className={'navbar navbar-light'}>
         <form className={'form-inline'}>
-          <Button
-            page={'/'}
-            content={<i className={'fa fa-home'} aria-hidden="true" />}
-          />
-          <Button page={'/about-me'} content={'About me'} />
-          <Button
-            page={'/login'}
-            content={<i className={'fa fa-space-shuttle'} aria-hidden="true" />}
-          />
+          <div className={'pr-2'}>
+            <Button
+              page={'/'}
+              content={<i className={'fa fa-home'} aria-hidden="true" />}
+            />
+          </div>
+          <div className={'pr-2'}>
+            <Button page={'/about-me'} content={'About me'} />
+          </div>
+          <div>
+            <Button
+              page={'/login'}
+              content={
+                <i className={'fa fa-space-shuttle'} aria-hidden="true" />
+              }
+            />
+          </div>
         </form>
       </nav>
     );

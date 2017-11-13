@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ButtonBar from './buttonbar/ButtonBar';
 import './Login.css';
+import LoginForm from './LoginForm';
 
 class Secret extends Component {
   render() {
@@ -12,24 +13,11 @@ class Secret extends Component {
               <ButtonBar />
             </div>
             <div className={'card-block'}>
-              <form>
-                <div className={'card login-card w-50'}>
-                  <div className={'card-block'}>
-                    <div className={'input-group'}>
-                      <input
-                        type={'password'}
-                        className={'form-control'}
-                        placeholder={'Password'}
-                      />
-                      <span class="input-group-btn">
-                        <button class="btn btn-secondary" type="button">
-                          Submit
-                        </button>
-                      </span>
-                    </div>
-                  </div>
+              <div className={'card login-card'}>
+                <div className={'card-block'}>
+                  <LoginForm />
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
