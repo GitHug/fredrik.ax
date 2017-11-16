@@ -2,9 +2,13 @@
   background-color: transparent;
   border: 0;
   color: white;
-}
 
+  div.card-block {
+    padding-left: 1em;
+  }
 
-.page-card div.card-block {
-  padding-left: 1em;
+  .card-header {
+    background-color: transparent;
+    border-bottom: transparent;
+  }
 }
