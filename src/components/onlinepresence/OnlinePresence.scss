@@ -1,21 +1,18 @@
-.OnlinePresence-container {
+.OnlinePresence {
   color: white;
-}
 
-.OnlinePresence-container a svg {
-  width: 2em;
-  height: 2em;
-  padding-right: 0.3em;
-  fill: white;
-}
+    a svg {
+    width: 2em;
+    height: 2em;
+    padding-right: 0.3em;
+    fill: white;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+  }
 
-.OnlinePresence-container a svg:hover {
-  fill: #161614;
-}
-
-.OnlinePresence-container   a svg {
-  transition: 200ms;
-  transition-timing-function: ease-in-out;
-  -webkit-transition: 200ms;
-  -webkit-transition-timing-function: ease-in-out;
+  a svg:hover {
+    fill: #161614;
+  }
 }

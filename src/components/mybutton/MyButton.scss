@@ -1,34 +1,30 @@
 .MyButton {
   vertical-align: top;
-}
 
-.MyButton a {
-  background-color: rgba(255, 255, 255, 0);
-  border: 0.1em solid #fff;
-  color: white;
-  padding: 0.5em 0.75em;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1em;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-}
+  a {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0.1em solid #fff;
+    color: white;
+    padding: 0.5em 0.75em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+  }
 
-.MyButton .active,
-.MyButton a:hover {
-  background-color: rgb(255, 255, 255);
-  color: black;
-}
+  .active, a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
 
-.MyButton a {
-  transition: 200ms;
-  transition-timing-function: ease-in-out;
-  -webkit-transition: 200ms;
-  -webkit-transition-timing-function: ease-in-out;
-}
-
-.MyButton a:focus {
-  outline: 0;
+  a:focus {
+    outline: 0;
+  }
 }

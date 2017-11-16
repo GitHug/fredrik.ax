@@ -8,7 +8,7 @@ import './OnlinePresence.css';
 class OnlinePresence extends Component {
   render() {
     return (
-      <div className={'OnlinePresence-container'}>
+      <div className={'OnlinePresence'}>
         <LinkedInLogo />
         <GitHubLogo />
         <HackerRankLogo />

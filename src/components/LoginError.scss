@@ -1,0 +1,10 @@
+.LoginError {
+  div.card.login-card.alert {
+    background-color: green;
+    justify-content: center;
+  }
+
+  div.login-card.alert .card-header {
+    background-color: lightblue;
+  }
+}

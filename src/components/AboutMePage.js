@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ButtonBar from './buttonbar/ButtonBar';
-import './AboutMe.css';
+import './AboutMePage.css';
 
 class AboutMe extends Component {
   render() {

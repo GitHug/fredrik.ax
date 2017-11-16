@@ -16,43 +16,45 @@ class LoginForm extends Component {
   };
 
   onSubmit = event => {
-    window.alert('A name was submitted: ' + this.state.value);
     event.preventDefault();
 
     const { value } = this.state;
 
     axios
-      .post(
-        (process.env.REACT_APP_BACKEND_HOST || 'http://localhost:8080') +
-          '/login',
-        { value }
-      )
+      .post('https://fredrikapi.herokuapp.com/login', { value })
       .then(response => {
-        console.log(response, 'Signature added!');
+        console.log(response, 'Login success!');
       })
       .catch(err => {
-        console.log(err, 'Signature not added, try again');
+        console.log(err, 'Failed');
+        this.error = true;
       });
   };
 
   render() {
     return (
-      <form className={'LoginForm'} onSubmit={this.onSubmit}>
-        <div class="form-group">
-          <label for="psw">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="psw"
-            placeholder="Password"
-            value={this.state.value}
-            onChange={this.onChange}
-          />
+      <div className={'LoginForm'}>
+        <div className={'card login-card'}>
+          <div className={'card-block'}>
+            <form onSubmit={this.onSubmit}>
+              <div className={'form-group'}>
+                <label htmlFor={'psw'}>Password</label>
+                <input
+                  type="password"
+                  className={'form-control'}
+                  id="psw"
+                  placeholder="Password"
+                  value={this.state.value}
+                  onChange={this.onChange}
+                />
+              </div>
+              <button type="submit" className={'btn btn-primary'}>
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary">
-          Submit
-        </button>
-      </form>
+      </div>
     );
   }
 }
