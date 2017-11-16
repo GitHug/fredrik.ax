@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './LoginForm.css';
 import axios from 'axios';
+import LoginError from './LoginError';
 
 class LoginForm extends Component {
   constructor(props) {
     super(props);
     this.state = { value: '' };
+    this.response = { status: '', msg: '' };
 
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
@@ -18,16 +20,17 @@ class LoginForm extends Component {
   onSubmit = event => {
     event.preventDefault();
 
-    const { value } = this.state;
+    let { value } = this.state;
 
+    let self = this;
     axios
       .post('https://fredrikapi.herokuapp.com/login', { value })
       .then(response => {
         console.log(response, 'Login success!');
       })
       .catch(err => {
-        console.log(err, 'Failed');
-        this.error = true;
+        self.response = err.response.data;
+        self.setState({ response: self.response });
       });
   };
 
@@ -54,6 +57,7 @@ class LoginForm extends Component {
             </form>
           </div>
         </div>
+        {!this.response.msg || <LoginError message={this.response} />}
       </div>
     );
   }

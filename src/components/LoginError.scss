@@ -1,10 +1,11 @@
 .LoginError {
-  div.card.login-card.alert {
-    background-color: green;
-    justify-content: center;
+
+  div.card.alert {
+    padding: 0;
   }
 
-  div.login-card.alert .card-header {
-    background-color: lightblue;
+  div.card-block p{
+    margin: 0;
+    padding: 0;
   }
 }

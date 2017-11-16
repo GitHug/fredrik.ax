@@ -1,14 +1,10 @@
-div.card.page-card {
+.page-card {
   background-color: transparent;
   border: 0;
-}
-
-div.card.page-card div.card-header {
-  background-color: transparent;
-  border: 0;
-}
-
-div.card.page-card div.card-block {
   color: white;
+}
+
+
+.page-card div.card-block {
   padding-left: 1em;
 }
