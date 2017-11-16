@@ -15,11 +15,11 @@ class Home extends Component {
                 <ButtonBar />
               </div>
               <div className={'card-block'}>
-                <div class="row">
-                  <div class="col-sm-6">
+                <div className={'row'}>
+                  <div className={'col-sm-6'}>
                     <Intro />
                   </div>
-                  <div class="col-sm-6">
+                  <div className={'col-sm-6'}>
                     <AboutMe />
                   </div>
                 </div>
