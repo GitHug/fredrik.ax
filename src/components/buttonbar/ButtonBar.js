@@ -12,9 +12,6 @@ class ButtonBar extends Component {
               content={<i className={'fa fa-home'} aria-hidden="true" />}
             />
           </div>
-          <div className={'pr-2'}>
-            <Button page={'/about-me'} content={'About me'} />
-          </div>
           <div>
             <Button
               page={'/login'}

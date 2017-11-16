@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import { HashRouter, Route } from 'react-router-dom';
-import AboutMe from './components/AboutMePage';
+import AboutMe from './components/AboutMe';
 import Home from './components/HomePage';
-import Secret from './components/LoginPage';
+import LoginPage from './components/LoginPage';
 import MyNavbar from './components/MyNavbar';
 
 class App extends Component {
@@ -18,8 +18,7 @@ class App extends Component {
             <div className={'row'}>
               <div className={'col'}>
                 <Route exact path={'/'} component={Home} />
-                <Route path={'/about-me'} component={AboutMe} />
-                <Route path={'/login'} component={Secret} />
+                <Route path={'/login'} component={LoginPage} />
               </div>
             </div>
           </section>

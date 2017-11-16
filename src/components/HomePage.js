@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Intro from './intro/Intro';
 import ButtonBar from './buttonbar/ButtonBar';
 import './HomePage.css';
+import AboutMe from './AboutMe';
 
 class Home extends Component {
   render() {
@@ -14,7 +15,14 @@ class Home extends Component {
                 <ButtonBar />
               </div>
               <div className={'card-block'}>
-                <Intro />
+                <div class="row">
+                  <div class="col-sm-6">
+                    <Intro />
+                  </div>
+                  <div class="col-sm-6">
+                    <AboutMe />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
